@@ -171,7 +171,7 @@ code {
   padding: 1px 5px;
 }
 
-pre {
+pre, math {
   padding: 8px 12px;
   overflow-x: auto;
 
@@ -180,6 +180,25 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+math {
+  font-family: $code-font-family;
+  font-size: 0.9375em;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
+  background-color: $code-background-color;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $spacing-unit / 2;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto $spacing-unit / 2;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
 }
 
 .highlight {
