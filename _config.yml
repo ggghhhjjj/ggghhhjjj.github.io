@@ -42,3 +42,13 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+exclude:
+    - analytical-collection
+    - _site
+    - script
+    - README.md
+
+collections:
+  medias:
+    output: true

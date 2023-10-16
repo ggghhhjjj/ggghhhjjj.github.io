@@ -1,0 +1,14 @@
+---
+layout: post
+title: Доклад за {{ _title }} от {{ _current_date }}
+categories:
+    - доклади за публикации
+author:
+    - Авокадо генератор
+---
+
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in publications %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
