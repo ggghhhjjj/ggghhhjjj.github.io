@@ -6,9 +6,85 @@ categories:
 author:
     - Авокадо генератор
 ---
+<a name="content"></a>
+- [Путин](#путин)
+- [Зеленски](#зеленски)
+- [Захарова](#захарова)
+- [Макгрегор](#макгрегор)
+- [Експерт](#експерт)
 
+## Всички <a name="all"></a>
+{% if publications %}
 | Заглавия | Описание |
 | ------- | ------- |
 {%- for row in publications %}
 | [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
 {%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}
+
+## Путин <a name="путин"></a>
+[Обратно към началото](#content)
+
+{% if tag_путин %}
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in tag_путин %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}
+
+## Зеленски <a name="зеленски"></a>
+[Обратно към началото](#content)
+
+{% if tag_зеленски %}
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in tag_зеленски %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}
+
+## Захарова <a name="захарова"></a>
+[Обратно към началото](#content)
+
+{% if tag_захарова %}
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in tag_захарова %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}
+
+## Макгрегор <a name="макгрегор"></a>
+[Обратно към началото](#content)
+
+{% if tag_макгрегор %}
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in tag_макгрегор %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}
+
+## Експерт <a name="експерт"></a>
+[Обратно към началото](#content)
+
+{% if tag_експерт %}
+| Заглавия | Описание |
+| ------- | ------- |
+{%- for row in tag_експерт %}
+| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- endfor -%}
+{% else %}
+    Няма публикации
+{% endif %}

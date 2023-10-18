@@ -19,7 +19,7 @@ def main(csv_files, template_file, file, title):
         csv_data_dict[key] = csv_data
 
     csv_data_dict['_csv_files'] = csv_files
-    csv_data_dict['_current_date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    csv_data_dict['_current_date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
     csv_data_dict['_title'] = title
 
     env = Environment(loader=FileSystemLoader('./markdown-templates'))
