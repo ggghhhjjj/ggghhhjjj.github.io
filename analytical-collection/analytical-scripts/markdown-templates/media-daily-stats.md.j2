@@ -7,11 +7,20 @@ author:
     - Авокадо генератор
 ---
 <a name="content"></a>
+{% if tag_statistics %}
+{%- for row in tag_statistics %}
+- [{{ row['Tag'] }} - {{ row['Count'] }} бр.](#{{ row['Tag'] }})
+{%- endfor -%}
+{% else %}
 - [Путин](#путин)
 - [Зеленски](#зеленски)
 - [Захарова](#захарова)
 - [Макгрегор](#макгрегор)
 - [Експерт](#експерт)
+{% endif %}
+
+
+
 
 ## Всички <a name="all"></a>
 {% if publications %}
