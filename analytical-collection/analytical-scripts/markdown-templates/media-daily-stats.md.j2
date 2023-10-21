@@ -1,6 +1,6 @@
 ---
 layout: post
-title: {{ _title }} от {{ _current_date }}
+title: {{ data._title }} от {{ data._current_date }}
 categories:
     - доклади за публикации
 author:
@@ -8,93 +8,46 @@ author:
 ---
 <a name="content"></a>
 <a name="общо за деня"></a>
-{% if tag_statistics %}
-{%- for row in tag_statistics %}
+
+{% if data.tags_count %}
+{%- for row in data.tags_count %}
+- [{{ row['Tag'] }} - {{ row['Count'] }} бр.](#{{ row['Tag'] }})
+{%- endfor -%}
+{% endif %}
+
+{% if data.tags_count %}
+{%- for row in tags_count %}
 - [{{ row['Tag'] }} - {{ row['Count'] }} бр.](#{{ row['Tag'] }})
 {%- endfor -%}
 {% else %}
-- [Путин](#путин)
-- [Зеленски](#зеленски)
-- [Захарова](#захарова)
-- [Макгрегор](#макгрегор)
-- [Експерт](#експерт)
+{%- for tag in data.tags %}
+- [{{ tag | capitalize }}](#{{ tag | lower }})
+{%- endfor -%}
 {% endif %}
-
-
-
 
 ## Всички <a name="all"></a>
-{% if publications %}
+{% if data.publications %}
 | Заглавия | Описание |
 | ------- | ------- |
-{%- for row in publications %}
-| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
+{%- for publication in data.publications %}
+| [{{ publication['Title'] }}]({{ publication['Link'] }}) | {::nomarkdown}{{ publication['Description'] | replace("\n", "<br>") }}{:/} |
 {%- endfor -%}
 {% else %}
     Няма публикации
 {% endif %}
 
-## Путин <a name="путин"></a>
+{% for tag in data._tags %}
+## {{ tag | capitalize }} <a name="{{ tag | lower }}"></a>
 [Обратно към началото](#content)
-
-{% if tag_путин %}
+{% set csv_name = "tag_" ~ tag %}
+{% if data.get(csv_name) %}
 | Заглавия | Описание |
 | ------- | ------- |
-{%- for row in tag_путин %}
+{%- for row in data.get(csv_name) %}
 | [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
-{%- endfor -%}
+{%- endfor %}
 {% else %}
     Няма публикации
 {% endif %}
 
-## Зеленски <a name="зеленски"></a>
-[Обратно към началото](#content)
-
-{% if tag_зеленски %}
-| Заглавия | Описание |
-| ------- | ------- |
-{%- for row in tag_зеленски %}
-| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
 {%- endfor -%}
-{% else %}
-    Няма публикации
-{% endif %}
-
-## Захарова <a name="захарова"></a>
-[Обратно към началото](#content)
-
-{% if tag_захарова %}
-| Заглавия | Описание |
-| ------- | ------- |
-{%- for row in tag_захарова %}
-| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
-{%- endfor -%}
-{% else %}
-    Няма публикации
-{% endif %}
-
-## Макгрегор <a name="макгрегор"></a>
-[Обратно към началото](#content)
-
-{% if tag_макгрегор %}
-| Заглавия | Описание |
-| ------- | ------- |
-{%- for row in tag_макгрегор %}
-| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
-{%- endfor -%}
-{% else %}
-    Няма публикации
-{% endif %}
-
-## Експерт <a name="експерт"></a>
-[Обратно към началото](#content)
-
-{% if tag_експерт %}
-| Заглавия | Описание |
-| ------- | ------- |
-{%- for row in tag_експерт %}
-| [{{ row['Title'] }}]({{ row['Link'] }}) | {::nomarkdown}{{ row['Description'] | replace("\n", "<br>") }}{:/} |
-{%- endfor -%}
-{% else %}
-    Няма публикации
-{% endif %}

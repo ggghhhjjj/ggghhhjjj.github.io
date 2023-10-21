@@ -11,22 +11,29 @@ import shared
 def main(csv_files, template_file, file, title):
     print(f"Processing {csv_files}")
 
-    csv_data_dict = {}
+    data_dict = {}
+    tags=[]
 
     for csv_file in csv_files:
-        key = shared.utils.filename_no_extension(csv_file)
+        name = shared.utils.filename_no_extension(csv_file)
         csv_data = shared.utils.read_csv_file(csv_file)
-        csv_data_dict[key] = csv_data
+        if name.lower().startswith('tag_'.lower()):
+            tag = name[len("tag_"):]
+            tags.append(tag)
 
-    csv_data_dict['_csv_files'] = csv_files
-    csv_data_dict['_current_date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
-    csv_data_dict['_title'] = title
+        data_dict[name] = csv_data
+
+    data_dict['_csv_files'] = csv_files
+    data_dict['_current_date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
+    data_dict['_title'] = title
+    data_dict['_tags'] = tags
+
 
     env = Environment(loader=FileSystemLoader('./markdown-templates'))
 
     template = env.get_template(template_file)
 
-    markdown = template.render(**csv_data_dict)
+    markdown = template.render(**{ 'data': data_dict})
 
     with open(file, "w") as file:
         file.write(markdown)
