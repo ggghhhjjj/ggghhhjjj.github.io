@@ -3,12 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   {{ content }}
-
 
   {% if site.paginate %}
     {% assign posts = paginator.medias %}
@@ -16,27 +11,22 @@ layout: default
     {% assign medias = site.medias %}
   {% endif %}
 
-
   {%- if medias.size > 0 -%}
-    {%- if page.list_title -%}é
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = "%Y-%m-%d %H:%M" -%}
-      {%- for media in medias reversed -%}
-      <li>
-        <span class="post-meta">{{ media.datetime | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ media.url | relative_url }}">
-            {{ media.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ media.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+    {%- assign date_format = "%Y-%m-%d %H:%M" -%}
+    <table>
+      <thead>
+        <tr>
+          <th>{{ page.title }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for media in medias reversed -%}
+        <tr>
+          <td><span class="post-meta">{{ media.datetime | date: date_format }}</span><a class="post-link" href="{{ media.url | relative_url }}">{{ media.title | escape }}</a></td>
+        </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
 
     {% if site.paginate %}
       <div class="pager">
@@ -57,5 +47,4 @@ layout: default
     {%- endif %}
 
   {%- endif -%}
-
 </div>

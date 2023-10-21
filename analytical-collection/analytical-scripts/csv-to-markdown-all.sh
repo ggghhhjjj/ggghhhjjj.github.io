@@ -21,8 +21,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/regnum/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/regnum/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tags_count.csv" \
@@ -35,8 +35,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/ren/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/ren/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/ren/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tags_count.csv" \
@@ -49,8 +49,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/rg/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/rg/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/rg/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tags_count.csv" \
@@ -63,8 +63,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/ria/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/ria/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/ria/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tags_count.csv" \
@@ -77,8 +77,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/rt/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/rt/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/rt/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tags_count.csv" \
@@ -91,8 +91,8 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/tass/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/tass/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/tass/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tags_count.csv" \
@@ -105,11 +105,39 @@ python3 csv-to-markdown.py --csv \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_зеленски.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_захарова.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" \
-"../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/vseruss/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/vseruss/$current_date/tag_медведев.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_макгрегор.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_експерт.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tags_count.csv" \
 --template "media-daily-stats.md.j2" \
 --file "../../_medias/$current_date-vseruss.md" \
 --title "vseruss.ru" "$@"
+#
+python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rbc/$current_date/publications.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_путин.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_зеленски.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_захарова.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_макгрегор.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tag_експерт.csv" \
+"../analytical-data/csv/per-days/rbc/$current_date/tags_count.csv" \
+--template "media-daily-stats.md.j2" \
+--file "../../_medias/$current_date-rbc.md" \
+--title "rbc.ru" "$@"
+#
+python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_путин.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_зеленски.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_захарова.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_макгрегор.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tag_експерт.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/tags_count.csv" \
+--template "media-daily-stats.md.j2" \
+--file "../../_medias/$current_date-rambler-world.md" \
+--title "ramble.ru/world" "$@"
