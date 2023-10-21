@@ -12,7 +12,7 @@ def main(csv_files, template_file, file, title):
     print(f"Processing {csv_files}")
 
     data_dict = {}
-    tags=[]
+    tags = []
 
     for csv_file in csv_files:
         name = shared.utils.filename_no_extension(csv_file)
@@ -24,16 +24,15 @@ def main(csv_files, template_file, file, title):
         data_dict[name] = csv_data
 
     data_dict['_csv_files'] = csv_files
-    data_dict['_current_date'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
+    data_dict['_datetime'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
     data_dict['_title'] = title
     data_dict['_tags'] = tags
-
 
     env = Environment(loader=FileSystemLoader('./markdown-templates'))
 
     template = env.get_template(template_file)
 
-    markdown = template.render(**{ 'data': data_dict})
+    markdown = template.render(**{'data': data_dict})
 
     with open(file, "w") as file:
         file.write(markdown)
@@ -46,14 +45,14 @@ if __name__ == '__main__':
 
     parser.add_argument('--csv', nargs='+', help='List of CSV files which values will be populated in the template')
 
-    parser.add_argument('--templates-folder', help='Path to a templates folder',
-                        default="./markdown-templates")
+    parser.add_argument('--templates-folder', default="./markdown-templates", help='Path to a templates folder')
 
     parser.add_argument('--template', help='Jinja2 template file name relative to templates folder')
 
     parser.add_argument('--file', help='File to be generated')
 
-    parser.add_argument('--title', required=False, help='Document title. Used as _title variable in template. Default: file argument')
+    parser.add_argument('--title', required=False,
+                        help='Document title. Used as _title variable in template. Default: file argument')
 
     args = parser.parse_args()
 

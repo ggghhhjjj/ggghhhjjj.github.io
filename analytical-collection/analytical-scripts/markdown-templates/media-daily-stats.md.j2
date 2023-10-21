@@ -1,6 +1,7 @@
 ---
-layout: post
-title: {{ data._title }} от {{ data._current_date }}
+layout: post-media
+title: {{ data._title }}
+datetime: {{ data._datetime }}
 categories:
     - доклади за публикации
 author:
@@ -9,21 +10,15 @@ author:
 <a name="content"></a>
 <a name="общо за деня"></a>
 
-{% if data.tags_count %}
-{%- for row in data.tags_count %}
+{%- if data.tags_count -%}
+    {%- for row in data.tags_count %}
 - [{{ row['Tag'] }} - {{ row['Count'] }} бр.](#{{ row['Tag'] }})
-{%- endfor -%}
-{% endif %}
-
-{% if data.tags_count %}
-{%- for row in tags_count %}
-- [{{ row['Tag'] }} - {{ row['Count'] }} бр.](#{{ row['Tag'] }})
-{%- endfor -%}
-{% else %}
-{%- for tag in data.tags %}
+    {%- endfor -%}
+{%- else -%}
+    {%- for tag in data.tags %}
 - [{{ tag | capitalize }}](#{{ tag | lower }})
-{%- endfor -%}
-{% endif %}
+    {%- endfor -%}
+{%- endif %}
 
 ## Всички <a name="all"></a>
 {% if data.publications %}
