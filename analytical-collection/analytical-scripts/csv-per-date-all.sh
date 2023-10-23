@@ -12,3 +12,4 @@ python3 csv-per-date.py --csv "../analytical-data/csv/tass.csv"             --pa
 python3 csv-per-date.py --csv "../analytical-data/csv/vseruss.csv"          --path "../analytical-data/csv/per-days/vseruss" "$@"
 python3 csv-per-date.py --csv "../analytical-data/csv/rbc.csv"              --path "../analytical-data/csv/per-days/rbc" "$@"
 python3 csv-per-date.py --csv "../analytical-data/csv/rambler-world.csv"    --path "../analytical-data/csv/per-days/rambler-world" "$@"
+python3 csv-per-date.py --csv "../analytical-data/csv/news-ru.csv"           --path "../analytical-data/csv/per-days/news-ru" "$@"

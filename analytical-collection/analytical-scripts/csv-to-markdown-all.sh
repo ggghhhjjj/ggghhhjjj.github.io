@@ -143,3 +143,17 @@ python3 csv-to-markdown.py --csv \
 --template "media-daily-stats.md.j2" \
 --file "../../_medias/$current_date-rambler-world.md" \
 --title "ramble.ru/world" "$@"
+#
+python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_путин.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_зеленски.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_захарова.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_лавров.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_медведев.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_макгрегор.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tag_експерт.csv" \
+"../analytical-data/csv/per-days/news-ru/$current_date/tags_count.csv" \
+--template "media-daily-stats.md.j2" \
+--file "../../_medias/$current_date-news-ru.md" \
+--title "news.ru" "$@"

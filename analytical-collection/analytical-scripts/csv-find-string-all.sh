@@ -83,3 +83,11 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-wor
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]" "$@"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_лавров.csv" --find "Лавров" "$@"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_медведев.csv" --find "Медведев" "$@"
+#
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_путин.csv" --find "Путин" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_зеленски.csv" --find "Зеленск" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_захарова.csv" --find "Захарова" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_макгрегор.csv" --find "Макгрегор" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_лавров.csv" --find "Лавров" "$@"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/news-ru/$current_date/publications.csv" --target "../analytical-data/csv/per-days/news-ru/$current_date/tag_медведев.csv" --find "Медведев" "$@"
