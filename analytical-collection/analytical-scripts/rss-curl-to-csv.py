@@ -237,7 +237,7 @@ def save_to_csv(rss_items, csv_filename, datetime_format):
 
 def main(args):
     global HAS_DEBUG
-    HAS_DEBUG = bool(args.debug) if args.debug is not None else False
+    HAS_DEBUG = "true" == args.debug or "True" ==  args.debug
 
     rss_url = args.url
 
