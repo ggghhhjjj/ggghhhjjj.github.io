@@ -1,4 +1,7 @@
 #!/bin/sh
+
+. ../../.venv/bin/activate
+
 python3 rss-to-csv.py "https://regnum.ru/rss/news" "../analytical-data/csv/regnum.csv"
 python3 rss-to-csv.py "https://tass.ru/rss/v2.xml" "../analytical-data/csv/tass.csv" "%a, %d %b %Y %H:%M:%S %z"
 python3 rss-to-csv.py "https://rg.ru/xml/index.xml" "../analytical-data/csv/rg.csv" "%a, %d %b %Y %H:%M:%S %z"

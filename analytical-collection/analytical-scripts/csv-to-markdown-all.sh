@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. ../../.venv/bin/activate
+
 current_date=$(date +'%Y-%m-%d')
 
 python3 csv-to-markdown.py --csv \

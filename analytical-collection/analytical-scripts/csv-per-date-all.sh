@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. ../../.venv/bin/activate
+
 python3 csv-per-date.py --csv "../analytical-data/csv/lenta.csv"            --path "../analytical-data/csv/per-days/lenta" "$@"
 python3 csv-per-date.py --csv "../analytical-data/csv/regnum.csv"           --path "../analytical-data/csv/per-days/regnum" --datetime-format "%a, %d %b %Y %H:%M:%S %Z" "$@"
 python3 csv-per-date.py --csv "../analytical-data/csv/ren.csv"              --path "../analytical-data/csv/per-days/ren" "$@"

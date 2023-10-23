@@ -180,6 +180,8 @@ if __name__ == '__main__':
                 if sorted_items is None:
                     sys.exit()
 
+                os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
+
                 # Create and configure a CSV writer
                 with open(csv_filename, mode=file_mode, newline='') as csv_file:
                     fieldnames = ["pubDateStr", "Title", "Link", "Description"]

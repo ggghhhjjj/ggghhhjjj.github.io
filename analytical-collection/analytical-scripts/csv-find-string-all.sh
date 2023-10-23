@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. ../../.venv/bin/activate
+
 current_date=$(date +'%Y-%m-%d')
 
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_путин.csv" --find "Путин" "$@"
