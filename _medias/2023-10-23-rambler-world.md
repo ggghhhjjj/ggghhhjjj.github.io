@@ -1,7 +1,7 @@
 ---
 layout: post-media
 title: ramble.ru/world
-datetime: 2023-10-23 21:39:55 
+datetime: 2023-10-23 21:43:34 
 categories:
     - доклади за публикации
 author:
