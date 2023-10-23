@@ -169,6 +169,8 @@ def save_to_csv(rss_items, csv_filename, datetime_format):
     if sorted_items is None:
         sys.exit()
 
+    os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
+
     # Create and configure a CSV writer
     with open(csv_filename, mode=file_mode, newline="") as csv_file:
         fieldnames = ["pubDateStr", "Title", "Link", "Description"]
