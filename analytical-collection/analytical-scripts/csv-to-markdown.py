@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 from datetime import datetime
 
 from jinja2 import Environment, FileSystemLoader
@@ -33,6 +34,8 @@ def main(csv_files, template_file, file, title):
     template = env.get_template(template_file)
 
     markdown = template.render(**{'data': data_dict})
+
+    os.makedirs(os.path.dirname(file), exist_ok=True)
 
     with open(file, "w") as file:
         file.write(markdown)
