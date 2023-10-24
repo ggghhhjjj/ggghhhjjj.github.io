@@ -12,5 +12,5 @@ python3 rss-curl-to-csv.py --url "https://lenta.ru/rss/google-newsstand/main/"  
 python3 rss-curl-to-csv.py --url "https://vseruss.com/feed/"                         --csv "../analytical-data/csv/vseruss.csv"
 python3 rss-curl-to-csv.py --url "https://rssexport.rbc.ru/rbcnews/news/30/full.rss" --csv "../analytical-data/csv/rbc.csv"
 python3 rss-curl-to-csv.py --url "https://news.rambler.ru/rss/world/"                --csv "../analytical-data/csv/rambler-world.csv"
-python3 rss-curl-to-csv.py --url "https://news.ru/rss/"                              --csv "../analytical-data/csv/news-ru.csv"
+# python3 rss-curl-to-csv.py --url "https://news.ru/rss/"                              --csv "../analytical-data/csv/news-ru.csv"
 
