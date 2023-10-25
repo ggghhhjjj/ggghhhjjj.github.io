@@ -5,8 +5,8 @@
 if [ $# -eq 0 ]; then
     current_date=$(date +'%Y-%m-%d')
 else
-    # If script arguments were provided, use the first argument as the date
-    current_date="$1"
+    datetime="$1"
+    current_date=$(echo "$datetime" | cut -d ' ' -f 1)
 fi
 
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_путин.csv" --find "Путин"

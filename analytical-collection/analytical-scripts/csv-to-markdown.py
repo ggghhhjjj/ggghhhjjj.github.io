@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 import shared
 
 
-def main(csv_files, template_file, file, title):
+def main(csv_files, template_file, file, title, date_time):
     print(f"Processing {csv_files}")
 
     data_dict = {}
@@ -25,7 +25,7 @@ def main(csv_files, template_file, file, title):
         data_dict[name] = csv_data
 
     data_dict['_csv_files'] = csv_files
-    data_dict['_datetime'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
+    data_dict['_datetime'] = date_time
     data_dict['_title'] = title
     data_dict['_tags'] = tags
 
@@ -39,6 +39,10 @@ def main(csv_files, template_file, file, title):
 
     with open(file, "w") as file:
         file.write(markdown)
+
+
+def default_datetime():
+    return datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z')
 
 
 if __name__ == '__main__':
@@ -57,6 +61,12 @@ if __name__ == '__main__':
     parser.add_argument('--title', required=False,
                         help='Document title. Used as _title variable in template. Default: file argument')
 
+    parser.add_argument('--datetime', required=False,
+                        default=default_datetime,
+                        help='Document date and time. Used as _datetime variable in template. IMPORTANT! It is used '
+                             'to reorder posts on the web page. Should support format from minima.date_format.'
+                             ' Default: current date and time')
+
     args = parser.parse_args()
 
     csv_files_arg = shared.utils.is_valid_file_path(args.csv)
@@ -66,5 +76,6 @@ if __name__ == '__main__':
     shared.utils.is_valid_file_path(s)
     file_arg = args.file
     title_arg = args.title if args.title is not None else shared.utils.filename_no_extension(file_arg)
+    datetime_arg = args.datetime
 
-    main(csv_files_arg, template_arg, file_arg, title_arg)
+    main(csv_files_arg, template_arg, file_arg, title_arg, datetime_arg)
