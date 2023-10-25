@@ -7,7 +7,7 @@ else
     current_date="$1"
 fi
 
-# sh "./rss-all.sh" "$current_date"
+sh "./rss-all.sh" "$current_date"
 sh "./csv-per-date-all.sh" "$current_date"
 sh "./csv-find-string-all.sh" "$current_date"
 sh "./csv-rows-count-all.sh" "$current_date"
