@@ -14,7 +14,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$curr
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" --target "../analytical-data/csv/per-days/lenta/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -23,7 +23,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$cur
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" --target "../analytical-data/csv/per-days/regnum/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -32,7 +32,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$curren
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ren/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ren/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -41,7 +41,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rg/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rg/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -50,7 +50,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$curren
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/ria/$current_date/publications.csv" --target "../analytical-data/csv/per-days/ria/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -59,7 +59,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rt/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rt/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -68,7 +68,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$curre
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/tass/$current_date/publications.csv" --target "../analytical-data/csv/per-days/tass/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -77,7 +77,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$cu
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" --target "../analytical-data/csv/per-days/vseruss/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -86,7 +86,7 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$curren
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rbc/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
 #
@@ -95,6 +95,6 @@ python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-wor
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_захарова.csv" --find "Захарова"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_макгрегор.csv" --find "Макгрегор"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_експерт.csv" --find "[Ээ]ксперт[^и]"
-python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_лавров.csv" --find "Лавров"
+python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_лавров.csv" --find "{?:Лавров|МИД)"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_медведев.csv" --find "Медведев"
 python3 csv-find-string.py --source "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" --target "../analytical-data/csv/per-days/rambler-world/$current_date/tag_молдова.csv" --find "(?:Молдав|Попеску|Кишинев|Водэ|Додон|Шор|Санд|Вережан|Таубер|Шанс|Оргеев|Лунг|Приднестров|Красносельск|Бессараб|Гагауз|Речан)"
