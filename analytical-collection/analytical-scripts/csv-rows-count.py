@@ -33,6 +33,8 @@ def parse_arguments():
 
 
 def main(sources: List[str], target: str, labels: List[str]):
+    print(f"CSV Row Count processing {target} ...")
+
     target_folder = os.path.abspath(os.path.dirname(target))
 
     os.makedirs(target_folder, exist_ok=True)

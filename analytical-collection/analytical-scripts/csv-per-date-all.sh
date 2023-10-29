@@ -19,4 +19,3 @@ python3 csv-per-date.py --csv "../analytical-data/csv/tass.csv"          --date 
 python3 csv-per-date.py --csv "../analytical-data/csv/vseruss.csv"       --date "$current_date"   --path "../analytical-data/csv/per-days/vseruss"
 python3 csv-per-date.py --csv "../analytical-data/csv/rbc.csv"           --date "$current_date"   --path "../analytical-data/csv/per-days/rbc"
 python3 csv-per-date.py --csv "../analytical-data/csv/rambler-world.csv" --date "$current_date"   --path "../analytical-data/csv/per-days/rambler-world"
-python3 csv-per-date.py --csv "../analytical-data/csv/news-ru.csv"       --date "$current_date"    --path "../analytical-data/csv/per-days/news-ru"
