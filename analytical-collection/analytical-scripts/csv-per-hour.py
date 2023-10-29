@@ -2,8 +2,10 @@
 
 import argparse
 import csv
+from collections import defaultdict
+from datetime import datetime
 
-import pandas as pd
+import shared
 
 """
 The script counts number of daily posts per hour
@@ -35,20 +37,25 @@ def main(args):
 
     print(f"CSV publication per hour Processing {csv_daily_publications} ...")
 
-    df = pd.read_csv(csv_daily_publications)
+    hourly_counts = defaultdict(int)
 
-    # Convert the "pubDateStr" column to datetime
-    df['pubDateStr'] = pd.to_datetime(df['pubDateStr'], format=datetime_format)
+    csv_data = shared.utils.read_csv_file(csv_daily_publications)
 
-    # Group the rows by hour and count the rows in each group
-    hourly_counts = df.groupby(df['pubDateStr'].dt.hour).size()
+    for row in csv_data:
+        date_str = row['pubDateStr']  # Assuming the date is in the first column
 
-    # Convert hourly_counts to a DataFrame with appropriate column names
-    hourly_counts_df = hourly_counts.reset_index()
-    hourly_counts_df.columns = ['Hour', 'Count']
+        pub_date = datetime.strptime(date_str, datetime_format)
 
-    # Write the counts to a CSV file
-    hourly_counts_df.to_csv(csv_target, index=False)
+        hour = pub_date.hour
+
+        hourly_counts[hour] += 1
+
+    sorted_hours_countm = sorted(hourly_counts.items())
+
+    with open(csv_target, 'w', newline='') as output_file:
+        writer = csv.writer(output_file)
+        writer.writerow(['Hour', 'Count'])
+        writer.writerows(sorted_hours_countm)
 
 
 if __name__ == "__main__":
