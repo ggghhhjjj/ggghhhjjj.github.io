@@ -11,6 +11,7 @@ sh "./rss-all.sh" "$current_date"
 sh "./csv-per-date-all.sh" "$current_date"
 sh "./csv-find-string-all.sh" "$current_date"
 sh "./csv-rows-count-all.sh" "$current_date"
+sh "./csv-per-hour-all.sh" "$current_date"
 sh "csv-to-markdown-all.sh" "$current_date"
 
 echo "Done."

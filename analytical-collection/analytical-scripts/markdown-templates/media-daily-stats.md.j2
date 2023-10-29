@@ -9,6 +9,11 @@ author:
 ---
 <a name="content"></a>
 <a name="общо за деня"></a>
+{% if data.per_hour %}
+| Час | {% for item in data.per_hour %} {{ item['Hour'] }} | {% endfor %}
+| ---  | {% for item in data.per_hour %} --- | {% endfor %}
+| Новини | {% for item in data.per_hour %} {{ item['Count'] }} | {% endfor %}
+{% endif %}
 
 {%- if data.tags_count -%}
     {%- for row in data.tags_count %}

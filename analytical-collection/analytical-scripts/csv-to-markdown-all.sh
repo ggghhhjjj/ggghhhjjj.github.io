@@ -12,6 +12,7 @@ fi
 
 
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/lenta/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/lenta/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/lenta/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/lenta/$current_date/tag_зеленски.csv" \
@@ -28,6 +29,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/regnum/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/regnum/$current_date/tag_зеленски.csv" \
@@ -44,6 +46,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/ren/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/ren/$current_date/tag_зеленски.csv" \
@@ -60,6 +63,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rg/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rg/$current_date/tag_зеленски.csv" \
@@ -76,6 +80,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/ria/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/ria/$current_date/tag_зеленски.csv" \
@@ -92,6 +97,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rt/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rt/$current_date/tag_зеленски.csv" \
@@ -108,6 +114,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/tass/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/tass/$current_date/tag_зеленски.csv" \
@@ -124,6 +131,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/vseruss/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/vseruss/$current_date/tag_зеленски.csv" \
@@ -140,6 +148,7 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rbc/$current_date/per_hour.csv" \
 "../analytical-data/csv/per-days/rbc/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/rbc/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rbc/$current_date/tag_зеленски.csv" \
@@ -156,6 +165,8 @@ python3 csv-to-markdown.py --csv \
 --datetime "$current_datetime"
 #
 python3 csv-to-markdown.py --csv \
+"../analytical-data/csv/per-days/rambler-world/$current_date/per_hour.csv" \
+"../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/rambler-world/$current_date/publications.csv" \
 "../analytical-data/csv/per-days/rambler-world/$current_date/tag_путин.csv" \
 "../analytical-data/csv/per-days/rambler-world/$current_date/tag_зеленски.csv" \
