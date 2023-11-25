@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ../../.venv/bin/activate
+. ../../venv/bin/activate
 
 if [ $# -eq 0 ]; then
     current_date=$(date +'%Y-%m-%d')

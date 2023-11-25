@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ../../.venv/bin/activate
+. ../../venv/bin/activate
 
 python3 rss-curl-to-csv.py --url "https://regnum.ru/rss/news"                        --csv "../analytical-data/csv/regnum.csv" --datetime-format "%a, %d %b %Y %H:%M:%S %Z"
 python3 rss-curl-to-csv.py --url "https://tass.ru/rss/v2.xml"                        --csv "../analytical-data/csv/tass.csv"

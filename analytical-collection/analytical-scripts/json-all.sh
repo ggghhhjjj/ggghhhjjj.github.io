@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ../../.venv/bin/activate
+source ../../venv/bin/activate
 
 python3 csv-to-json.py "../analytical-data/csv/lenta.csv" "../analytical-data/json/lenta.json"
 python3 csv-to-json.py "../analytical-data/csv/regnum.csv" "../analytical-data/json/regnum.json" "%a, %d %b %Y %H:%M:%S %Z"
