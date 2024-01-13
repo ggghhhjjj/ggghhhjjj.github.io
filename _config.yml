@@ -48,7 +48,3 @@ exclude:
     - _site
     - script
     - README.md
-
-collections:
-  medias:
-    output: true
