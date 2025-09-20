@@ -1,0 +1,19 @@
+# GitHub Copilot Instructions for this Jekyll blog
+
+prompt: |
+  - This is a Jekyll blog project.
+  - Use Jekyll 4.x conventions.
+  - Jekyll documentation: https://jekyllrb.com/docs/
+  - Prefer minimal, clean HTML and CSS.
+  - Use the minima theme and jekyll-feed plugin.
+  - Write posts in Markdown with YAML front matter.
+  - Use 2-space indentation for Ruby and YAML files.
+  - Avoid deprecated Jekyll plugins.
+  - Use semantic HTML for accessibility.
+  - Add alt text to all images.
+  - Use `jekyll-seo-tag` for SEO best practices.
+  - Place all new blog posts in the `_posts` directory with the format `YYYY-MM-DD-a.md`.
+  - Avoid inline CSS; use `_sass/main.scss` and `assets/style.css` for styling.
+  - When creating new layouts, place them in the `_layouts` directory.
+  - Use Markdown with YAML front matter for all posts and pages.
+  - Do not use deprecated Jekyll plugins.
